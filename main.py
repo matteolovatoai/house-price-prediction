@@ -41,13 +41,13 @@ else:
     user_input['bedrooms'] = int(input("Numero di camere da letto: "))
     user_input['bathrooms'] = int(input("Numero di bagni: "))
     user_input['stories'] = int(input("Quanti piani ha la casa? "))
-    user_input['mainroad'] = "yes" if input("La proprietà affaccia sulla strada principale? (y/n)") == "y" else "no"
-    user_input['guestroom'] = "yes" if input("C'è la stanza degli ospiti? (y/n)") == "y" else "no"
-    user_input['basement'] = "yes" if input("C'è il seminterrato? (y/n)") == "y" else "no"
-    user_input['hotwaterheating'] = "yes" if input("Il riscaldamento è funzionante? (y/n)") == "y" else "no"
-    user_input['airconditioning'] = "yes" if input("È presente un impianto di climatizzazione? (y/n)") == "y" else "no"
+    user_input['mainroad'] = "yes" if input("La proprietà affaccia sulla strada principale? (y/n): ") == "y" else "no"
+    user_input['guestroom'] = "yes" if input("C'è la stanza degli ospiti? (y/n): ") == "y" else "no"
+    user_input['basement'] = "yes" if input("C'è il seminterrato? (y/n): ") == "y" else "no"
+    user_input['hotwaterheating'] = "yes" if input("Il riscaldamento è funzionante? (y/n): ") == "y" else "no"
+    user_input['airconditioning'] = "yes" if input("È presente un impianto di climatizzazione? (y/n): ") == "y" else "no"
     user_input['parking'] = int(input("Quanti posti auto? "))
-    user_input['prefarea'] = "yes" if input("Si trova in una zona prestigiosa? (y/n)") == "y" else "no"
+    user_input['prefarea'] = "yes" if input("Si trova in una zona prestigiosa? (y/n): ") == "y" else "no"
     print("furnished/semi-furnished/unfurnished: ")
     furnishingstatus = input("stato dell'arredamento (f/s/u): ")
     user_input['furnishingstatus'] = "furnished" if furnishingstatus == "f" else "semi-furnished" if furnishingstatus == "s" else "unfurnished"
