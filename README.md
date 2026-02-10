@@ -57,6 +57,7 @@ pip install -r requirements.txt
 ## 🚀 Run
 Per lo script con input da terminale
 ```bash
+# oppure python3
 python main.py 
 ```
 Per usare l'applicazione interattiva
