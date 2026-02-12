@@ -28,7 +28,7 @@ Grazie a un'accurata fase di **Feature Engineering** e **Data Cleaning**, le per
 ├── requirements.txt    # Lista dipendenze pulita
 ├── .gitignore          # Esclusione file di sistema e dati pesanti
 └── README.md           # Documentazione del progetto
-
+```
 ## 📂 Dataset
 Il progetto utilizza il dataset [Kaggle - Housing Prices](https://www.kaggle.com/datasets/yasserh/housing-prices-dataset).
 
