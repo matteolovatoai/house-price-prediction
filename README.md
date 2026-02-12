@@ -48,7 +48,7 @@ pip install -r requirements.txt
 ```
 
 ## 🚀 Guida Rapida
-1. Installazione
+1. **Installazione**
 Clona la repository e configura l'ambiente:
 
 ```bash
@@ -57,14 +57,14 @@ cd house-price-prediction
 pip install -r requirements.txt
 ```
 
-2. Esecuzione Inferenza (Terminale)
+2. **Esecuzione Inferenza (Terminale)**
 Per testare il modello con un input simulato direttamente da riga di comando:
 
 ```bash
 python main.py
 ```
 
-3. Web App Interattiva (Streamlit)
+3. **Web App Interattiva (Streamlit)**
 Per lanciare l'interfaccia grafica e inserire i parametri della casa manualmente:
 
 ```bash
@@ -72,11 +72,11 @@ streamlit run main_visual.py
 ```
 
 ## ⚙️ Dettagli Tecnici
-Preprocessing: La pipeline di input gestisce automaticamente la conversione di 7 variabili categoriche (es. mainroad, airconditioning, furnishingstatus) in formato numerico prima di alimentare il modello.
+**Preprocessing:** La pipeline di input gestisce automaticamente la conversione di 7 variabili categoriche (es. mainroad, airconditioning, furnishingstatus) in formato numerico prima di alimentare il modello.
 
-Portabilità: I percorsi dei file sono gestiti con pathlib per garantire il funzionamento dello script su diversi sistemi operativi senza modifiche manuali.
+**Portabilità:** I percorsi dei file sono gestiti con pathlib per garantire il funzionamento dello script su diversi sistemi operativi senza modifiche manuali.
 
-Data Persistence: Il modello è salvato separatamente dal codice tramite joblib per permettere un caricamento rapido senza dover ri-addestrare l'algoritmo.
+**Data Persistence:** Il modello è salvato separatamente dal codice tramite joblib per permettere un caricamento rapido senza dover ri-addestrare l'algoritmo.
 
 ---
 
