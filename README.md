@@ -1,10 +1,10 @@
 # 🏠 House Price Prediction Project
 
+Questo progetto implementa una soluzione end-to-end di Machine Learning per la stima dei prezzi immobiliari. Partendo da un dataset reale, ho sviluppato una pipeline che include l'analisi esplorativa (EDA), il preprocessing dei dati e la creazione di un'interfaccia interattiva per l'utente finale.
+
 ## ✅ Stato del Progetto
 **Completato / Archiviato.**
 ![Status](https://img.shields.io/badge/status-completed-brightgreen)
-
-Questo progetto implementa una soluzione end-to-end di Machine Learning per la stima dei prezzi immobiliari. Partendo da un dataset reale, ho sviluppato una pipeline che include l'analisi esplorativa (EDA), il preprocessing dei dati e la creazione di un'interfaccia interattiva per l'utente finale.
 
 ## 📈 Risultati del Modello
 Grazie a un'accurata fase di **Feature Engineering** e **Data Cleaning**, le performance del modello di regressione hanno registrato un incremento significativo:
