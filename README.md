@@ -1,41 +1,34 @@
 # 🏠 House Price Prediction Project
 
-Benvenuto in questo progetto di Machine Learning.
-L'obiettivo è sviluppare un modello predittivo per stimare i prezzi immobiliari partendo da un dataset reale, applicando tecniche di Data Analysis (EDA) e algoritmi di Regressione.
+Questo progetto implementa una soluzione end-to-end di Machine Learning per la stima dei prezzi immobiliari. Partendo da un dataset reale, ho sviluppato una pipeline che include l'analisi esplorativa (EDA), il preprocessing dei dati e la creazione di un'interfaccia interattiva per l'utente finale.
 
-## 🚧 Stato del Progetto
-**Work in Progress.**  
-![Python](https://img.shields.io/badge/python-3.14-blue)
-![Status](https://img.shields.io/badge/status-Work_in_progress-yellow)  
-Migliorando gli input con streamlit
+## 📈 Risultati del Modello
+Grazie a un'accurata fase di **Feature Engineering** e **Data Cleaning**, le performance del modello di regressione hanno registrato un incremento significativo:
+- **Baseline R²:** 0.43
+- **Final R²:** **0.70** (+62% di accuratezza)
 
-## 🎯 Obiettivi
-- [x] Setup ambiente virtuale e dipendenze
-- [x] Acquisizione dataset (Housing Prices)
-- [x] Analisi Esplorativa dei Dati (Notebooks)
-- [x] Pulizia dati e Feature Engineering
-- [x] Training del modello (Linear Regression)
-- [x] Valutazione metriche (MSE, R2 Score)
+> **Key Insight:** Il miglioramento è stato ottenuto gestendo 7 variabili categoriche tramite mappatura ordinale/binaria e filtrando gli outlier (proprietà con prezzo > 10M), dimostrando che la qualità del dato è cruciale quanto la scelta dell'algoritmo.
 
-## 🛠️ Tech Stack
-- **Python 3.14**
-- **Pandas:** Manipolazione dati
-- **Matplotlib:** Visualizzazione dati
-- **Scikit-Learn:** Modellazione AI
-- **Jupyter:** Prototipazione rapida
-- **Streamlit:** App interattiva
+## 🛠️ Tech Stack & Requisiti
+- **Linguaggio:** Python 3.12+ (Sviluppato su MacBook Apple Silicon)
+- **Librerie Core:**
+  - `Pandas` & `NumPy`: Manipolazione dati.
+  - `Scikit-Learn`: Modellazione e metriche.
+  - `Joblib`: Serializzazione del modello (`.pkl`).
+  - `Streamlit`: Web App per l'inferenza interattiva.
+  - `Pathlib`: Gestione robusta dei percorsi cross-platform.
 
 ## 📂 Struttura della Repository
 ```text
-├── data/               # Dataset (ignorato da git per dimensione)
-├── notebooks/          # Analisi esplorativa (.ipynb)
-├── models/             # File del modello (.pkl)
-├── main.py             # Script principale
-├── main_visual.py      # App interattiva
-├── .gitignore          # File esclusi dal versionamento
-├── requirements.txt    # Lista dipendenze
-└── README.md           # Documentazione
-```
+├── data/               # Dataset Housing.csv (gestito tramite .gitignore)
+├── notebooks/          # Analisi esplorativa e training (.ipynb)
+├── models/             # Modello serializzato (house_price_model.pkl)
+├── main.py             # Script di inferenza via terminale
+├── main_visual.py      # App interattiva (Streamlit)
+├── requirements.txt    # Lista dipendenze pulita
+├── .gitignore          # Esclusione file di sistema e dati pesanti
+└── README.md           # Documentazione del progetto
+
 ## 📂 Dataset
 Il progetto utilizza il dataset [Kaggle - Housing Prices](https://www.kaggle.com/datasets/yasserh/housing-prices-dataset).
 
@@ -54,13 +47,37 @@ cd house-price-prediction
 pip install -r requirements.txt
 ```
 
-## 🚀 Run
-Per lo script con input da terminale
+## 🚀 Guida Rapida
+1. Installazione
+Clona la repository e configura l'ambiente:
+
 ```bash
-# oppure python3
-python main.py 
+git clone [https://github.com/matteolovato-AI/house-price-prediction.git](https://github.com/matteolovato-AI/house-price-prediction.git)
+cd house-price-prediction
+pip install -r requirements.txt
 ```
-Per usare l'applicazione interattiva
+
+2. Esecuzione Inferenza (Terminale)
+Per testare il modello con un input simulato direttamente da riga di comando:
+
+```bash
+python main.py
+```
+
+3. Web App Interattiva (Streamlit)
+Per lanciare l'interfaccia grafica e inserire i parametri della casa manualmente:
+
 ```bash
 streamlit run main_visual.py
 ```
+
+## ⚙️ Dettagli Tecnici
+Preprocessing: La pipeline di input gestisce automaticamente la conversione di 7 variabili categoriche (es. mainroad, airconditioning, furnishingstatus) in formato numerico prima di alimentare il modello.
+
+Portabilità: I percorsi dei file sono gestiti con pathlib per garantire il funzionamento dello script su diversi sistemi operativi senza modifiche manuali.
+
+Data Persistence: Il modello è salvato separatamente dal codice tramite joblib per permettere un caricamento rapido senza dover ri-addestrare l'algoritmo.
+
+---
+
+**Sviluppato da Matteo Lovato** | *Studente ITS - Specializzazione AI*
