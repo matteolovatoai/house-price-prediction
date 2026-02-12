@@ -39,7 +39,8 @@ Il progetto utilizza il dataset [Kaggle - Housing Prices](https://www.kaggle.com
 4. `pip install -r requirements_notebooks.txt`
 
 ## 🛠️ Installazione
-Assicurati di avere Python installato. Clona la repository e installa le dipendenze:
+Assicurati di avere Python installato.  
+Clona la repository e installa le dipendenze:
 
 ```bash
 git clone https://github.com/matteolovato-AI/house-price-prediction.git
@@ -48,7 +49,7 @@ pip install -r requirements.txt
 ```
 
 ## 🚀 Guida Rapida
-1. **Installazione**
+1. **Installazione**  
 Clona la repository e configura l'ambiente:
 
 ```bash
@@ -57,14 +58,14 @@ cd house-price-prediction
 pip install -r requirements.txt
 ```
 
-2. **Esecuzione Inferenza (Terminale)**
+2. **Esecuzione Inferenza (Terminale)**  
 Per testare il modello con un input simulato direttamente da riga di comando:
 
 ```bash
 python main.py
 ```
 
-3. **Web App Interattiva (Streamlit)**
+3. **Web App Interattiva (Streamlit)**  
 Per lanciare l'interfaccia grafica e inserire i parametri della casa manualmente:
 
 ```bash
