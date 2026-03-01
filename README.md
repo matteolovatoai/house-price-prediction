@@ -3,7 +3,7 @@
 Questo progetto implementa una soluzione end-to-end di Machine Learning per la stima dei prezzi immobiliari. Partendo da un dataset reale, ho sviluppato una pipeline che include l'analisi esplorativa (EDA), il preprocessing dei dati e la creazione di un'interfaccia interattiva per l'utente finale.
 
 ## ✅ Stato del Progetto
-**Completato / Archiviato.**
+**Completato**
 ![Status](https://img.shields.io/badge/status-completed-brightgreen)
 
 ## 🚀 Live Demo
