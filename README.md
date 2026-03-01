@@ -7,7 +7,7 @@ Questo progetto implementa una soluzione end-to-end di Machine Learning per la s
 ![Status](https://img.shields.io/badge/status-completed-brightgreen)
 
 ## 🚀 Live Demo
-Puoi testare l'applicazione direttamente nel browser qui:
+Puoi testare l'applicazione direttamente nel browser qui:  
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://matteolovatoai-house-price-prediction.streamlit.app/)
 
 ## 📈 Risultati del Modello
