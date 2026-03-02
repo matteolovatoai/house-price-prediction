@@ -1,0 +1,10 @@
+script/
+notebooks/
+.devcontainer
+README.md
+requirements_notebooks.txt
+
+__pycache__
+venv/
+.git
+.gitignore
