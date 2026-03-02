@@ -17,8 +17,8 @@ Se preferisci avviare l'app localmente usando Docker, segui questi passaggi (ass
    ```bash
    docker build -t house-price-prediction .
    ```  
-2. **Run container**
-    Il flag `--rm` al comando `run`. Serve a fare in modo che, quando chiudi l'app (Ctrl+C), il container venga rimosso automaticamente invece di restare "appeso" nel sistema.
+2. **Run container**  
+    Il flag `--rm` nel comando `run` serve a fare in modo che quando l'app viene chiusa (Ctrl+C), il container venga rimosso automaticamente invece di restare "appeso" nel sistema.
    ```bash
     docker run --rm -p 8501:8501 --name prediction-app house-price-prediction
     ```  
