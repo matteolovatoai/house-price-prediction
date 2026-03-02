@@ -10,6 +10,19 @@ Questo progetto implementa una soluzione end-to-end di Machine Learning per la s
 Puoi testare l'applicazione direttamente nel browser qui:  
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://matteolovatoai-house-price-prediction.streamlit.app/)
 
+### 🐳 Alternativamente: Esecuzione con Docker
+Se preferisci avviare l'app localmente usando Docker, segui questi passaggi (assicurati di avere Docker installato):
+
+1. **Build dell'immagine:**
+   ```bash
+   docker build -t house-price-prediction .
+   ```  
+2. **Run container**
+    Il flag `--rm` al comando `run`. Serve a fare in modo che, quando chiudi l'app (Ctrl+C), il container venga rimosso automaticamente invece di restare "appeso" nel sistema.
+   ```bash
+    docker run --rm -p 8501:8501 --name prediction-app house-price-prediction
+    ```  
+
 ## 📈 Risultati del Modello
 Grazie a un'accurata fase di **Feature Engineering** e **Data Cleaning**, le performance del modello di regressione hanno registrato un incremento significativo:
 - **Baseline R²:** 0.43
